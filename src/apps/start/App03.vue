@@ -1,12 +1,12 @@
 <template>
     <div id="main">
-        <MyCar v-for="car in json" :prop1="car"></MyCar>
+        <MyCar v-for="car in json" v-bind:prop-x="car"></MyCar>
     </div>
 </template>
   
 <script>
-import MyCar from "../components/MyCar.vue";
-import Json from "../assets/cars";
+import MyCar from "../../components/MyCar.vue";
+import Json from "../../assets/cars";
 
 export default {
     data() {
